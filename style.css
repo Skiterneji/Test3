@@ -1,0 +1,116 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Stile di base per l'immagine del banner in alto*/
+.banner {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+/* Stili generali del menu */
+nav ul {
+  list-style-type: none;
+  max-width: auto;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #333;
+  border-radius: 5px;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block; /* Usa inline-block per allineare i link orizzontalmente */
+  position: relative; /* Permette al sottomenu di essere posizionato in modo relativo */
+}
+nav ul li a {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+}
+/* Cambia colore quando si passa sopra un elemento del menu */
+nav ul li a:hover {
+  background-color: #111;
+}
+
+/* Nascondi il sottomenu per impostazione predefinita */
+.dropdown-content {
+  display: none; /* Il sottomenu è nascosto di default */
+  position: absolute; /* Posiziona il sottomenu sotto l'elemento di menu */
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown-content li a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: block;
+}
+/* Cambia colore quando si passa sopra un elemento del sottomenu */
+.dropdown-content li a:hover {
+  background-color: #111;
+}
+/* Mostra il sottomenu quando si passa sopra il menu principale */
+.dropdown:hover .dropdown-content {
+  display: block; /* Il sottomenu diventa visibile al passaggio del mouse */
+}
+
+/* Opzionale: Per centrare il menu */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+/* .card-section {} DA SISTEMARE*/
+
+/* Stile per ogni div contenitore */
+.content-box {
+  background-color: #f4f4f4; /* Colore di sfondo chiaro per separare i div */
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leggera ombra */
+  flex: 1 1 300px;
+}
+.content-box h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.content-box p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Stile della barra del footer (già definito in precedenza) */
+.footer-bar {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+/* Barra scura con testo in basso nel footer */
+.footer-bar {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.footer-bar p {
+  margin: 0;
+}
