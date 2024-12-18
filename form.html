@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrazione su SuoreOnline</title>
+    <link rel="stylesheet" href="style2.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Registrati su SuoreOnline</h2>
+        <form action="action_page.php" method="post">
+            <div class="form-group">
+                <label for="cognome">Cognome</label>
+                <input type="text" class="form-control" id="cognome" name="cognome"
+                    placeholder="Inserisci il tuo cognome" required />
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Inserisci il tuo nome"
+                    required />
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Inserisci la tua Email"
+                    required />
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="data">Data di nascita</label>
+                <input type="date" class="form-control" id="data" name="data" required />
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="luogonascita">Luogo di Nascita</label>
+                <select name="luoghi" id="luoghi" class="form-control" required>
+                    <option value="Bari">Bari</option>
+                    <option value="BAT">BAT</option>
+                    <option value="Brindisi">Brindisi</option>
+                    <option value="Foggia">Foggia</option>
+                    <option value="Lecce">Lecce</option>
+                    <option value="Taranto">Taranto</option>
+
+                </select>
+            </div>
+            <br />
+            <div class="form-group">
+                <label>Genere</label><br />
+                <input type="radio" id="maschile" name="genere" value="maschile" required />
+                <label for="maschile">Maschile</label>
+                <input type="radio" id="femminile" name="genere" value="femminile" />
+                <label for="femminile">Femminile</label>
+                <input type="radio" id="altro" name="genere" value="altro" />
+                <label for="altro">Altro</label>
+                <input type="radio" id="norisp" name="genere" value="altro" />
+                <label for="norisp">Preferisco non rispondere</label>
+            </div>
+            <br />
+            <div class="form-group">
+                <label>Preferenze</label><br />
+                <input type="checkbox" id="newsletter" name="newsletter" value="si" />
+                <label for="newsletter">Iscriviti alla newsletter</label><br />
+                <input type="checkbox" id="marketing" name="marketing" value="si" />
+                <label for="marketing">Acconsento al trattamento dei miei dati personali e per finalità di
+                    marketing</label>
+            </div>
+            <br />
+
+            <div class="form-group">
+                <label for="commenti">Messaggio</label>
+                <textarea id="commenti" name="commenti" rows="4" class="form-control"
+                    placeholder="Presenta qui i tuoi dubbi"></textarea>
+            </div>
+            <br />
+
+            <button id="myButton">Registrati</button>
+            <p id="message"></p>
+        </form>
+    </div>
+
+    <!-- <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

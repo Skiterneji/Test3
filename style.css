@@ -5,10 +5,17 @@ html {
 /* Stile di base per l'immagine del banner in alto*/
 .banner {
   max-width: 50%;
-  height: auto;
+  height: 200px;
   display: block;
+  object-fit: cover;
   border-radius: 15px;
   margin: 0 auto;
+}
+
+/* Opzionale: Per centrare il menu */
+header {
+  text-align: center;
+  padding: 20px;
 }
 
 /* Stili generali del menu */
@@ -21,10 +28,12 @@ nav ul {
   border-radius: 5px;
   text-align: center;
 }
+
 nav ul li {
   display: inline-block; /* Usa inline-block per allineare i link orizzontalmente */
   position: relative; /* Permette al sottomenu di essere posizionato in modo relativo */
 }
+
 nav ul li a {
   display: block;
   color: white;
@@ -34,6 +43,7 @@ nav ul li a {
   background-color: #333;
   transition: background-color 0.3s ease;
 }
+
 /* Cambia colore quando si passa sopra un elemento del menu */
 nav ul li a:hover {
   background-color: #111;
@@ -47,6 +57,7 @@ nav ul li a:hover {
   min-width: 160px;
   z-index: 1;
 }
+
 .dropdown-content li a {
   color: white;
   padding: 12px 16px;
@@ -54,6 +65,7 @@ nav ul li a:hover {
   border-radius: 5px;
   display: block;
 }
+
 /* Cambia colore quando si passa sopra un elemento del sottomenu */
 .dropdown-content li a:hover {
   background-color: #111;
@@ -63,15 +75,16 @@ nav ul li a:hover {
   display: block; /* Il sottomenu diventa visibile al passaggio del mouse */
 }
 
-/* Opzionale: Per centrare il menu */
-header {
-  text-align: center;
-  padding: 20px;
+/* Sezione dei tre div*/
+.card-section {
+border: #111;
+justify-content: center;
+align-items: auto;
+display: grid;
+
 }
 
-/* .card-section {} DA SISTEMARE*/
-
-/* Stile per ogni div contenitore */
+/* Stile per ogni div */
 .content-box {
   background-color: #f4f4f4; /* Colore di sfondo chiaro per separare i div */
   padding: 20px;
@@ -89,6 +102,55 @@ header {
 .content-box p {
   font-size: 16px;
   color: #666;
+}
+
+/* Stile per il bottone */
+button {
+  background-color: #333;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Cambia il colore quando si passa sopra il bottone */
+button:hover {
+  background-color: #111; /* Colore più scuro quando il mouse è sopra */
+}
+
+button {
+  padding: 5px 10px;
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px; 
+  margin: 5px;
+}
+
+.newsletter p {
+  margin: 0;
+  padding-right: 10px; /* Spazio tra il paragrafo e il form */
+}
+
+.newsletter form {
+  display: flex;
+  gap: 10px; /* Distanza tra label, input e bottone */
+}
+
+input[type="text"] {
+  padding: 5px;
+}
+
+
+/* Pulsante "Iscriviti newsletter" */
+.button-newsletter {
+  background-color: #008CBA;
 }
 
 /* Stile della barra del footer (già definito in precedenza) */

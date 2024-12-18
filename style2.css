@@ -1,0 +1,55 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+  }
+  .form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .form-container h2 {
+    text-align: center;
+    color: #333;
+  }
+  .form-container .form-group label {
+    font-weight: bold;
+    color: #444;
+  }
+  .form-container .form-group select,
+  .form-container .form-group input,
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  .form-container .form-group input[type="checkbox"],
+  .form-container .form-group input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  .form-container button,
+  .form-container .form-group input[type="submit"] {
+    width: 100%;
+    background-color: #666;
+    border: none;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .form-container button:hover,
+  .form-container .form-group input[type="submit"]:hover {
+    background-color: #111; /* Colore più scuro quando il mouse è sopra */
+}
+  .form-container .form-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
