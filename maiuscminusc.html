@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confrontando</title>
+    <script>
+        function contMaiuscMinus() {
+            // Otteniamo i valori delle due stringhe dai campi di input
+            const str1 = document.getElementById("stringa1").value;
+            const str2 = document.getElementById("stringa2").value;
+
+            // Funzione per contare le lettere maiuscole
+            function contaMaiuscole(str) {
+                let count = 0;
+                for (let i = 0; i < str.length; i++) {
+                    if (str[i] === str[i].toUpperCase() && str[i] !== str[i].toLowerCase()) {
+                        count++;
+                    }
+                }
+                return count;
+            }
+
+            // Funzione per contare le lettere minuscole
+            function contaMinuscole(str) {
+                let count = 0;
+                for (let i = 0; i < str.length; i++) {
+                    if (str[i] === str[i].toLowerCase() && str[i] !== str[i].toUpperCase()) {
+                        count++;
+                    }
+                }
+                return count;
+            }
+
+            // Calcoliamo il numero di lettere maiuscole e minuscole per entrambe le stringhe
+            const maiuscStr1 = contaMaiuscole(str1);
+            const maiuscStr2 = contaMaiuscole(str2);
+            const minuscStr1 = contaMinuscole(str1);
+            const minuscStr2 = contaMinuscole(str2);
+
+            // Visualizziamo il risultato nel div con id "risultato"
+            document.getElementById("risultato").innerHTML =
+                "Totale maiuscole in prima stringa: " + maiuscStr1 + "<br>" +
+                "Totale maiuscole in seconda stringa: " + maiuscStr2 + "<br><br>" +
+                "Totale minuscole in prima stringa: " + minuscStr1 + "<br>" +
+                "Totale minuscole in seconda stringa: " + minuscStr2;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Conta le lettere maiuscole e minuscole</h1>
+
+    <label for="stringa1">Inserisci la prima stringa:</label>
+    <input type="text" id="stringa1" name="stringa1"><br><br>
+
+    <label for="stringa2">Inserisci la seconda stringa:</label>
+    <input type="text" id="stringa2" name="stringa2"><br><br>
+
+    <button onclick="contMaiuscMinus()">Confronta maiuscole e minuscole</button>
+
+    <div id="risultato"></div>
+</body>
+
+</html>
